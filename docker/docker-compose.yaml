@@ -1,0 +1,32 @@
+services:
+  zint:
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+    container_name: zint-qrcode
+    volumes:
+      # Volume pour récupérer les QR codes générés
+      - ./output:/qrcodes
+      # Volume optionnel pour les fichiers d'entrée
+      - ./input:/input:ro
+    networks:
+      - tioTools
+    # Commande par défaut - génère un QR code de test
+    command: >
+      bash -c "
+        echo 'Zint QR Code Generator ready!' &&
+        echo 'Example: zint -o /qrcodes/test.png -d \"Hello World\"' &&
+        zint -o /qrcodes/test.png -d 'Hello World from Docker!' &&
+        echo 'Test QR code generated at /qrcodes/test.png' &&
+        tail -f /dev/null
+      "
+    # Redémarrage automatique
+    restart: unless-stopped
+    # Variables d'environnement optionnelles
+    environment:
+      - ZINT_OUTPUT_DIR=/qrcodes
+
+# Réseau tioTools
+networks:
+  tioTools:
+    external: true

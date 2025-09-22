@@ -21,3 +21,13 @@ extern/*
 
 .vscode/
 out/
+
+# Docker generated files and QR codes output
+docker/output/
+docker/qr_codes_export_html/
+docker/*.tar.gz
+docker/*.zip
+
+# Temporary test files
+docker/test_sheet_print.html
+docker/test_sheet_print.svg
