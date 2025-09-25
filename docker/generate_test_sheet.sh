@@ -61,3 +61,8 @@ else
     echo "❌ Erreur lors de la génération des planches"
     exit 1
 fi
+
+
+
+
+

@@ -397,3 +397,8 @@ echo "   2. Ouvrir $EXPORT_DIR/gallery.html (galerie complète)"
 echo "   3. Transférer le dossier $EXPORT_DIR où vous voulez"
 echo ""
 echo "📦 Package autonome prêt à l'emploi !"
+
+
+
+
+

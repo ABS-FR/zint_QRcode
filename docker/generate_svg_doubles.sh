@@ -80,3 +80,8 @@ echo ""
 echo "🔍 Comparaison des tailles:"
 echo "PNG total: $(du -sh output/*.png 2>/dev/null | awk '{sum+=$1} END {print sum "K"}')"
 echo "SVG total: $(du -sh output/*.svg 2>/dev/null | awk '{sum+=$1} END {print sum "K"}')"
+
+
+
+
+

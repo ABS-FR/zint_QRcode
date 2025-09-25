@@ -67,3 +67,8 @@ echo "   2. Si problème → testez ${BASE_NAME}-high-ecc.png"
 echo "   3. Pour format rectangulaire → ${BASE_NAME}-rmqr.png"
 echo ""
 echo "📖 Voir SCAN_TEST_GUIDE.md pour plus de détails"
+
+
+
+
+

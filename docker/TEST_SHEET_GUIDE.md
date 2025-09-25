@@ -156,3 +156,8 @@ firefox test_sheet_print.html
 ---
 
 *Guide créé pour validation complète des QR codes - Réseau tioTools*
+
+
+
+
+
